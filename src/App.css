@@ -1,0 +1,23 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: auto; /* Enable vertical scroll */
+  scroll-snap-type: y proximity; /* Apply scroll snap here */
+}
+
+.main {
+  flex-grow: 1; /* Fill the available space */
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #222;
+}
+
+.sidebar-item {
+  margin-bottom: 1rem;
+}

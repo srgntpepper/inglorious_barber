@@ -1,0 +1,61 @@
+.services {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
+.services h2 {
+  margin-bottom: 2rem;
+  align-items: start;
+  font-size: 3rem;
+  max-width: 1280px;
+}
+
+.services-list {
+  width: 100%;
+  max-width: 600px; /* Set a max-width for larger screens */
+  align-self: center;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd; /* A subtle separator */
+}
+
+.service-name {
+  flex: 3; /* Takes more space than the other elements */
+}
+
+.service-duration {
+  flex: 1;
+}
+
+.service-price {
+  flex: 1;
+  text-align: right;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .services {
+    height: auto; /* Height auto for mobile */
+    padding: 1rem;
+  }
+
+  .service-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
+
+  .service-duration,
+  .service-price {
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+}
