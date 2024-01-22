@@ -3,7 +3,9 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  padding-bottom: 10rem;
   gap: 2rem; /* Adjust the spacing between image and text */
+  min-height: 40vh;
   /* This makes each section a snap point */
   scroll-snap-align: start;
 }
@@ -15,6 +17,7 @@
 
 .about-image img {
   width: 100%;
+  border-radius: 50%;
   height: auto; /* Maintain aspect ratio */
 }
 

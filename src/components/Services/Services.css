@@ -1,29 +1,38 @@
 .services {
-  padding-left: 2rem;
   display: flex;
   flex-direction: column;
-  scroll-snap-align: start;
+  align-items: center; /* Center the items horizontally */
+  justify-content: start; /* Center the items vertically if there's enough space */
+  min-height: 85vh; /* Full viewport height */
+  padding-bottom: 2rem; /* Top and bottom padding */
+  margin: 0 1rem;
 }
 
-.services h2 {
-  margin-bottom: 2rem;
-  align-items: start;
-  font-size: 3rem;
-  max-width: 1280px;
+.services-title {
+  align-self: flex-start; /* Align the title to the start (left) */
+  margin-left: 1rem; /* Adjust this value to align the title as needed */
+  font-size: 3rem; /* Title font size */
+  margin-bottom: 8rem; /* Space below the title */
 }
 
 .services-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the service items */
   width: 100%;
-  max-width: 600px; /* Set a max-width for larger screens */
-  align-self: center;
+  max-width: 800px; /* Adjust max-width for larger screens */
 }
 
 .service-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
+  align-items: center; /* Center align the service info */
+  padding: 1rem 0; /* Add padding around each service item */
+  width: 100%; /* Make the service item full width of the parent container */
+  box-sizing: border-box; /* Include padding in the width calculation */
   border-bottom: 1px solid #ddd; /* A subtle separator */
+  margin-bottom: 1rem; /* Add space between service items */
+  font-size: 0.75rem;
 }
 
 .service-name {
@@ -39,23 +48,23 @@
   text-align: right;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .services {
-    height: auto; /* Height auto for mobile */
-    padding: 1rem;
+/* Scale font sizes based on screen size */
+@media (min-width: 768px) {
+  .services h2 {
+    font-size: 3.5rem; /* Slightly smaller font size for tablets and up */
+    margin-left: 2rem;
   }
 
   .service-item {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 0;
+    font-size: 1rem;
   }
+}
 
-  .service-duration,
-  .service-price {
-    width: 100%;
-    margin-top: 0.5rem;
-    text-align: left;
+@media (min-width: 1024px) {
+  .services h2 {
+    font-size: 4rem; /* Larger font size for desktops */
+  }
+  .service-item {
+    font-size: 2rem;
   }
 }

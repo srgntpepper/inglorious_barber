@@ -3,10 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8rem 0; /* Adjust top and bottom padding to narrow the navbar */
-  background-color: #111;
+  width: 100%;
+  padding: 0; /* Adjust top and bottom padding to narrow the navbar */
+  /* background-color: #111; */
   scroll-snap-align: start;
-  z-index: 10; /* Ensure the header is above the hero section */
+  z-index: 3;
 }
 
 .logo {
@@ -24,7 +25,7 @@
 
 /* Style for the second image */
 .logo img:nth-child(2) {
-  width: 16rem; /* Set the width of the second image */
+  width: 18rem; /* Set the width of the second image */
   display: block; /* removes bottom space under the image */
 }
 
@@ -36,7 +37,7 @@
 
 .nav {
   position: absolute; /* Position navbar absolutely to allow overlap */
-  top: 50%; /* Center vertically */
+  top: calc(100% + 8rem); /* Position the navbar lower */
   left: 0;
   right: 0;
   transform: translateY(
@@ -46,6 +47,9 @@
   justify-content: center; /* Distribute space evenly between and around items */
   align-items: center;
   width: 100%;
+  max-width: 80rem; /* Same as the global container */
+  margin: 0 auto; /* Center the navbar */
+  z-index: 3;
 }
 
 .nav ul {
@@ -59,7 +63,7 @@
 .nav ul li {
   cursor: pointer;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   transition: color 0.5s ease;
 }
 

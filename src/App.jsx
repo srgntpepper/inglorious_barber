@@ -22,7 +22,6 @@ function App() {
         <div className="sidebar-item">Profile</div> */}
       {/* Add other sidebar items here */}
       {/* </aside> */}
-
       <Footer />
     </div>
   );

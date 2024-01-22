@@ -1,14 +1,13 @@
 .hero {
-  padding-top: 4rem; /* Adjust this value to match the height of your navbar */
-  height: calc(
-    75vh - 6rem
-  ); /* Subtract the same value to maintain the overall height */
+  padding-top: 2.5rem; /* Adjust this value to match the height of your navbar */
+  height: 90vh; /* Subtract the same value to maintain the overall height */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   background: url("src/assets/Inside.jpg") no-repeat center center;
   background-size: cover; /* cover might work better than contain */
+  z-index: 2;
 }
 
 /* Overlay for the background image to create a faded effect */
@@ -19,7 +18,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  height: 75vh - 6rem;
   background: rgba(
     0,
     0,

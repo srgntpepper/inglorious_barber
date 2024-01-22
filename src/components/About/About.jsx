@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-image">
-        <img src="src\assets\logo_alone_t.png" alt="About Us" />
+        <img src="src\assets\javier-barber.jpg" alt="About Us" />
       </div>
       <div className="about-content">
         <h2>About Inglorious Barber Co.</h2>

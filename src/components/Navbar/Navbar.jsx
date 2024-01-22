@@ -3,6 +3,10 @@ import { Link } from "react-scroll";
 
 import "./Navbar.css";
 
+const test = () => {
+  console.log("clicked");
+};
+
 const Navbar = () => {
   return (
     <header className="header">
@@ -10,7 +14,13 @@ const Navbar = () => {
         {/* Left items */}
         <ul>
           <li>
-            <Link to="#about" smooth={true} duration={500}>
+            <Link
+              to="about"
+              smooth={true}
+              spy={true}
+              offset={50}
+              duration={600}
+            >
               About
             </Link>
           </li>
@@ -25,7 +35,7 @@ const Navbar = () => {
         {/* Right items */}
         <ul>
           <li>
-            <Link to="#services" smooth={true} duration={500}>
+            <Link to="services" smooth={true} duration={600} onClick={test}>
               Services
             </Link>
           </li>
