@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Hero.css";
+import Button from "../Button/Button";
 
 const Hero = () => {
   return (
@@ -9,7 +10,12 @@ const Hero = () => {
         {" "}
         {/* Ensure this div exists if you're using it in CSS */}
         {/* Main content */}
-        <h1>BOOK NOW</h1>
+        <Button
+          text="Book an Appointment"
+          color="#fff"
+          hoverEffect={true}
+          size="large"
+        />
         {/* Add more content here */}
       </div>
     </section>
