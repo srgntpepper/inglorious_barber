@@ -18,7 +18,7 @@
 
 /* Style for the first image */
 .logo img:nth-child(1) {
-  width: 8rem; /* Set the width of the first image */
+  width: 6rem; /* Set the width of the first image */
   transition: transform 0.7s ease-in-out;
   display: block; /* removes bottom space under the image */
 }
@@ -37,7 +37,7 @@
 
 .nav {
   position: absolute; /* Position navbar absolutely to allow overlap */
-  top: calc(100% + 8rem); /* Position the navbar lower */
+  top: calc(100% + 10rem); /* Position the navbar lower */
   left: 0;
   right: 0;
   transform: translateY(
@@ -71,40 +71,24 @@
   color: #ddd; /* Lighten the color on hover */
 }
 
-/* Add a class for the dropdown menu */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #111;
-  top: 100%;
-  right: 0;
-  z-index: 5;
-}
-
-.dropdown-menu li {
-  display: block;
-  text-align: center;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  /* Hide the second logo image */
-  .logo img:nth-child(2) {
+/* Mobile styles */
+@media (max-width: 480px) {
+  /* Adjust this breakpoint as needed for targeting mobile devices */
+  /* Hide the second logo image and nav links */
+  .logo img:nth-child(2),
+  .nav ul {
     display: none;
   }
 
-  /* Adjust the navbar layout */
-  .nav ul {
-    display: none; /* Hide the list and replace with a dropdown icon */
+  /* Show only the first logo image and adjust its size if needed */
+  .logo img:nth-child(1) {
+    width: 4rem; /* Adjust the size as needed */
   }
 
-  /* Show the dropdown menu when active */
-  .nav.active .dropdown-menu {
-    display: block;
-  }
-
-  /* Adjust the logo and nav container */
-  .header {
-    justify-content: flex-start; /* Align items to the left */
+  /* Adjust navbar positioning if needed */
+  .nav {
+    top: 0;
+    transform: none;
+    top: calc(100% + 2.5rem); /* Position the navbar lower */
   }
 }

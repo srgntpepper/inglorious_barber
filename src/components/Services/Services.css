@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center; /* Center the items horizontally */
   justify-content: start; /* Center the items vertically if there's enough space */
-  min-height: 85vh; /* Full viewport height */
+  min-height: 80vh; /* Full viewport height */
   padding-bottom: 2rem; /* Top and bottom padding */
   margin: 0 1rem;
 }
@@ -66,5 +66,11 @@
   }
   .service-item {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    scroll-snap-align: start;
   }
 }

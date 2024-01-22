@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh; /* Full viewport height */
-  scroll-snap-type: y proximity; /*Apply scroll snap here */
+  /* scroll-snap-type: y proximity; Apply scroll snap here */
   max-width: 150rem;
   margin: auto;
 }
@@ -20,4 +20,13 @@
 
 .sidebar-item {
   margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+  /* Enable scroll-snap for mobile */
+  .App {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
