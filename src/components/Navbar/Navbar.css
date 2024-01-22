@@ -70,3 +70,41 @@
 .nav ul li:hover {
   color: #ddd; /* Lighten the color on hover */
 }
+
+/* Add a class for the dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  top: 100%;
+  right: 0;
+  z-index: 5;
+}
+
+.dropdown-menu li {
+  display: block;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Hide the second logo image */
+  .logo img:nth-child(2) {
+    display: none;
+  }
+
+  /* Adjust the navbar layout */
+  .nav ul {
+    display: none; /* Hide the list and replace with a dropdown icon */
+  }
+
+  /* Show the dropdown menu when active */
+  .nav.active .dropdown-menu {
+    display: block;
+  }
+
+  /* Adjust the logo and nav container */
+  .header {
+    justify-content: flex-start; /* Align items to the left */
+  }
+}
