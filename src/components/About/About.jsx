@@ -9,7 +9,7 @@ const About = () => {
         <img src="src\assets\javier-barber.jpg" alt="About Us" />
       </div>
       <div className="about-content">
-        <h2>About Inglorious Barber Co.</h2>
+        <h2>About Us</h2>
         <p>
           Welcome to Inglorious Barber Co., where tradition meets modernity. We
           pride ourselves on providing top-notch grooming services. Our team of

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       {/* Footer content */}
-      <p>© 2024 Barber Shop. All rights reserved.</p>
+      <p>© 2024 Inglorious Barber Co. All rights reserved.</p>
     </footer>
   );
 };

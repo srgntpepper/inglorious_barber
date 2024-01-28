@@ -2,6 +2,7 @@
   padding-top: 2.5rem; /* Adjust this value to match the height of your navbar */
   height: 85vh; /* Subtract the same value to maintain the overall height */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -22,13 +23,148 @@
     0,
     0,
     0,
-    0.5
+    0.75
   ); /* This color and opacity affect only the background, not the content */
   z-index: 1;
 }
 
-/* Content inside App-hero should be above the overlay */
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  padding: 2rem; /* Add padding for spacing */
+  max-width: 800px; /* Limit the width for very wide screens */
+  text-align: center; /* Center the text */
+
+  animation-delay: 0.5s; /* This delays the start of the animation */
+}
+
+.hero-title {
+  width: 45rem;
+  z-index: 3;
+  padding-bottom: 4rem;
+}
+
+.hero-title img {
+  animation: fadeInTitle 1s ease forwards; /* Delays the title animation */
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1.55;
+  margin-bottom: 2rem; /* Add space between text and redirects */
+  animation: fadeIn 3.5s ease forwards; /* Delays the text animation */
+}
+
+.redirects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  animation: fadeIn 3.5s ease forwards;
+}
+
+.redirects a,
+.redirects h1 {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTitle {
+  from {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .hero-title {
+    width: 27rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
+
+  .hero-text {
+    width: 100%; /* Allow text to fill container */
+    padding: 1rem; /* Adjust padding */
+    font-size: 1rem; /* Ensure text is legible */
+  }
+
+  .redirects {
+    gap: 1rem; /* Reduce gap between elements */
+  }
+}
+
+/* Adjust the layout for mobile screens */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    margin-right: 0; /* Remove the margin as it's now stacked */
+    font-size: 1rem;
+    width: 90%; /* Allow text to fill container */
+  }
+
+  .redirects {
+    width: 100%; /* Use the full width for redirects */
+    gap: 0.5rem; /* Adjust the gap */
+  }
+
+  .redirects a,
+  .redirects h1 {
+    font-size: 1.2rem; /* Slightly smaller font size for mobile */
+  }
+}
+
+@media (max-width: 280px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-title img {
+    width: 200px; /* Delays the title animation */
+  }
+
+  .hero-text {
+    margin-right: 0; /* Remove the margin as it's now stacked */
+    font-size: 1rem;
+    width: 70%; /* Allow text to fill container */
+  }
+
+  .redirects {
+    width: 80%; /* Use the full width for redirects */
+    gap: 0.25rem; /* Adjust the gap */
+  }
+
+  .redirects a,
+  .redirects h1 {
+    font-size: 1.2rem; /* Slightly smaller font size for mobile */
+  }
 }

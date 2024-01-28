@@ -1,20 +1,25 @@
 .button {
   /* Basic button styles */
-  padding: 0.5rem 1rem;
-  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.75rem;
+  border: 2px solid #f5f5f5;
   border-radius: 5%;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: black;
-}
-
-.button.large {
-  /* Specific styles for large buttons */
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
+  background-color: #ffffff00;
+  color: #f5f5f5;
 }
 
 .button.hover-effect:hover {
   /* Styles for hover effect */
-  opacity: 0.8;
+  background-color: #f5f5f5; /* This will be the text color on hover */
+  color: #000; /* This will be the background color on hover */
+  border-color: #ffffff00; /* Optional: if you want to change the border color on hover */
+}
+
+@media (max-width: 480px) {
+  .button {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+  }
 }
