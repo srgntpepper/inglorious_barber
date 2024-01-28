@@ -55,47 +55,46 @@
   display: flex;
   flex-direction: column;
   align-items: center; /* Center content */
+  text-align: center;
   padding: 2rem; /* Add padding for spacing */
+  margin: auto;
   max-width: 800px; /* Limit the width for very wide screens */
   text-align: center; /* Center the text */
 }
 
 .hero-title {
-  width: 45rem;
-  z-index: 3;
-  padding-bottom: 4rem;
-}
-
-.hero-title img {
-  animation: fadeInTitle 1s ease forwards;
+  max-width: 100%;
+  height: auto;
+  animation: fadeInTitle 1s ease;
 }
 
 .hero-address {
   color: #fff; /* Use the same white color for consistency */
-  font-size: 1rem; /* Adjust the font size as needed */
+  font-size: 1.2rem;
+  font-weight: 300;
   text-decoration: none; /* No underline for the link */
   margin: 1rem 0; /* Spacing above and below the address */
   transition: color 0.3s ease; /* Smooth transition for hover state */
+  animation: fadeIn 3.5s ease;
 }
 
 .hero-address:hover {
   color: #a8dadc; /* Slightly lighter color on hover for better visibility */
+  text-decoration: underline;
 }
 
 .hero-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
-  line-height: 1.55;
+  line-height: 1.6;
   margin-bottom: 2rem; /* Add space between text and redirects */
   animation: fadeIn 3.5s ease forwards;
 }
 
 .redirects {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.4rem;
   animation: fadeIn 3.5s ease forwards;
 }
 
@@ -112,10 +111,17 @@
     flex-direction: column;
   }
 
+  .hero-title {
+    padding-top: 1rem;
+  }
+
+  .hero-address {
+    font-size: 1.75rem;
+  }
+
   .hero-text {
-    margin-right: 0; /* Remove the margin as it's now stacked */
     font-size: 1rem;
-    width: 90%; /* Allow text to fill container */
+    padding: 0 1rem;
   }
 
   .redirects {

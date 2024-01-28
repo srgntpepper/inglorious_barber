@@ -52,6 +52,7 @@
 /* Style for the first image */
 .logo img:nth-child(1) {
   width: 6rem; /* Set the width of the first image */
+  height: auto;
   transition: transform 0.7s ease-in-out;
   display: block; /* removes bottom space under the image */
 }
@@ -59,6 +60,7 @@
 /* Style for the second image */
 .logo img:nth-child(2) {
   width: 18rem; /* Set the width of the second image */
+  height: auto;
   display: block; /* removes bottom space under the image */
 }
 
@@ -96,6 +98,7 @@
 .nav ul li {
   cursor: pointer;
   color: #fff;
+  text-decoration: underline;
   font-size: 1.5rem;
   transition: color 0.5s ease;
 }
@@ -124,6 +127,7 @@
   /* Show only the first logo image and adjust its size if needed */
   .logo img:nth-child(1) {
     width: 4rem; /* Adjust the size as needed */
+    height: auto;
   }
 
   /* Adjust navbar positioning if needed */

@@ -24,7 +24,10 @@ const Navbar = () => {
 
         {/* Centered logo */}
         <div className="logo">
-          <img src="src\assets\logo_alone_t.png" alt="Barber Shop Logo" />
+          <img
+            src="src\assets\logo_alone_t.png"
+            alt="Inglorious Barber Co. Logo"
+          />
           {/* <img src="src\assets\logo_name_t.png" alt="Barber Shop Name" /> */}
         </div>
 
