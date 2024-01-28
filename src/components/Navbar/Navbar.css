@@ -133,3 +133,9 @@
     top: calc(100% + 5.5rem); /* Position the navbar lower */
   }
 }
+
+@media (max-width: 280px) {
+  .nav {
+    top: calc(100% + 2rem);
+  }
+}

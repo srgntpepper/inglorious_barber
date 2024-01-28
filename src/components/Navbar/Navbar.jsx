@@ -17,7 +17,7 @@ const Navbar = () => {
               offset={50}
               duration={600}
             >
-              About
+              About Us
             </Link>
           </li>
         </ul>

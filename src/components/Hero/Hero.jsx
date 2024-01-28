@@ -4,6 +4,8 @@ import "./Hero.css";
 import Button from "../Button/Button";
 
 const Hero = () => {
+  const addressLink = "https://maps.app.goo.gl/cmyLCfJFvsVRKrTY7";
+
   return (
     <section className="hero">
       <div className="hero-title">
@@ -12,6 +14,14 @@ const Hero = () => {
           alt="Barber Shop Name"
           className="hero-title"
         />
+        <a
+          href={addressLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hero-address"
+        >
+          10808 Los Alamitos Blvd, Los Alamitos, CA 90720
+        </a>
         <div className="hero-content">
           <p className="hero-text">
             Classic cuts, modern cuts, and kid's cuts, including, but not
