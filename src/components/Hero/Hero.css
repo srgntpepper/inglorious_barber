@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url("src/assets/Inside.jpg") no-repeat center center;
+  background: url("../../assets/Inside.jpg") no-repeat center center;
   background-size: cover; /* cover might work better than contain */
   z-index: 2;
 }
@@ -88,6 +88,7 @@
   color: #fff;
   line-height: 1.6;
   margin-bottom: 2rem; /* Add space between text and redirects */
+  width: 500px;
   animation: fadeIn 3.5s ease forwards;
 }
 

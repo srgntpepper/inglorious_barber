@@ -1,13 +1,14 @@
 import React from "react";
 
 import "./About.css";
+import IngloriousBarberCoJavier from "../../assets/javier-barber.jpg";
 
 const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-image">
         <img
-          src="src\assets\javier-barber.jpg"
+          src={IngloriousBarberCoJavier}
           alt="Inglorious Barber Co. Barber"
         />
       </div>
@@ -16,9 +17,9 @@ const About = () => {
         <p>
           Welcome to Inglorious Barber Co., where tradition meets modernity. We
           pride ourselves on providing top-notch grooming services. Our team of
-          skilled barbers is dedicated to delivering the best experience for our
-          clients. Whether you're here for a quick trim or a complete makeover,
-          we make sure you leave looking and feeling great.
+          skilled barbers are dedicated to delivering the best experience for
+          our clients. Whether you're here for a quick trim or a complete
+          makeover, we make sure you leave looking and feeling great.
         </p>
         {/* Add more content as needed */}
       </div>

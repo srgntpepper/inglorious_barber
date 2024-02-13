@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./Footer.css";
+import IngloriousBarberCoInstagram from "../../assets/instagram.svg";
+import IngloriousBarberCoFacebook from "../../assets/facebook.svg";
 
 const Footer = () => {
   const address = "10808 Los Alamitos Blvd, Los Alamitos, CA 90720";
@@ -18,16 +20,16 @@ const Footer = () => {
         <div className="social-links">
           <a href={instagramLink} aria-label="Instagram">
             <img
-              src="/src/assets/instagram.svg"
+              src={IngloriousBarberCoInstagram}
               alt="Inglorious Barber Co. Instagram"
             />
           </a>
-          <a href={facebookLink} aria-label="Facebook">
+          {/* <a href={facebookLink} aria-label="Facebook">
             <img
-              src="/src/assets/facebook.svg"
+              src={IngloriousBarberCoFacebook}
               alt="Inglorious Barber Co. Facebook"
             />
-          </a>
+          </a> */}
           {/* <a href={twitterLink} aria-label="Twitter">
             <img
               src="/src/assets/twitter.svg"
