@@ -25,10 +25,11 @@ const Hero = () => {
           10808 Los Alamitos Blvd, Los Alamitos, CA 90720
         </a>
         <p className="hero-text">
-          Classic cuts, modern cuts, and kid's cuts, including, but not limited
-          to fades, tapers, long hair, beards, and hot towel shaves.
-          <br /> Available by appointment or simply walk in. Come enjoy a
-          beverage of your choice on the house.
+          We specialize in classic, modern, and kids cuts. Including but not
+          limited to fades, tapers, long hair, beards, and hot towel shaves.
+          <br /> We are available by appointment
+          <strong> (strongly recommended)</strong> or simply call us for walk in
+          availability (you miss 100% of the shots you don't take).
         </p>
         <div className="redirects">
           <a href="tel:15623433728">

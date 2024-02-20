@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <main className="main">
         <Hero />
-        <Services />
         <About />
+        <Services />
       </main>
 
       {/* <aside className="sidebar"> */}

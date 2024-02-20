@@ -12,13 +12,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Stack children vertically */
   padding: 2rem;
-  padding-bottom: 10rem;
-  gap: 2rem; /* Adjust the spacing between image and text */
-  min-height: 40vh;
+  /* gap: 2rem; Adjust the spacing between image and text */
+  /* min-height: 40vh; */
+  /* Without photo */
+  min-height: 80vh;
+  /* Without photo */
   /* This makes each section a snap point */
   scroll-snap-align: start;
   animation: fadeIn 3.5s ease forwards;
+  font-size: x-large;
+}
+
+.about-title {
+  align-self: flex-start; /* Align the title to the start (left) */
+  margin-left: 1rem; /* Adjust this value to align the title as needed */
+  font-size: 3rem; /* Title font size */
+  margin-bottom: 8rem; /* Space below the title */
 }
 
 .about-image {
@@ -34,12 +45,24 @@
 
 .about-content {
   flex: 2; /* Adjust the flex-basis as necessary */
-  max-width: 50%;
+  /* max-width: 50%; */
+
+  /* Without Photo */
+  max-width: 80%; /* Adjust width as needed */
+  margin: auto; /* Center the content block */
+  /* Without photo */
+}
+/* Add a media query for larger screens if the text should be more constrained */
+@media (min-width: 768px) {
+  .about-content {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
+    padding-bottom: 10rem;
   }
 
   .about-image {
@@ -48,5 +71,6 @@
 
   .about-content {
     max-width: 100%;
+    font-size: 1.25rem;
   }
 }
